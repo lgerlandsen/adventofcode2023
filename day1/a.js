@@ -18,10 +18,10 @@ let siffer2 = 0;
     for await ( const line of file.readLines()) {
 //lineReader.on("line", function (line) {
         console.log(line)
-        siffer1 = line.match(re1)[1];
-        siffer2 = line.match(re2)[1];
+        siffer1 = Number(line.match(re1)[1]);
+        siffer2 = Number(line.match(re2)[1]);
         console.log('siffer1=', siffer1, ' siffer2=', siffer2);
-        sum = sum + siffer1 * 10 + siffer2 
+        sum += siffer1 * 10 + siffer2 
     }
 console.log('Day 1 part a');
 console.log('Sum=', sum);
