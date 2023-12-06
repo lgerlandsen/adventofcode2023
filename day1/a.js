@@ -18,4 +18,6 @@ lineReader.on("line", function (line) {
         console.log('siffer1=', siffer1, ' siffer2=', siffer2);
         sum += siffer1 * 10 + siffer2 
 });
+console.log('Day 1 part a');
 console.log('Sum=', sum);
+
