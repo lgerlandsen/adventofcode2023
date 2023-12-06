@@ -11,7 +11,7 @@ const re2 = /.*(\d).*?$/
 //    terminal: false
 //});
 var sum = 0;
-( await () => {
+( async () => {
     const file = await open('day1/testinput1a.txt');
     for await ( const line of file.readLines()) {
 //lineReader.on("line", function (line) {
@@ -21,9 +21,10 @@ var sum = 0;
         console.log('siffer1=', siffer1, ' siffer2=', siffer2);
         sum += siffer1 * 10 + siffer2 
     }
-});
 console.log('Day 1 part a');
 console.log('Sum=', sum);
+
+});
 
 //});
 
