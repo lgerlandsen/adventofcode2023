@@ -1,4 +1,5 @@
 //import { open } from 'node:fs/promises';
+var fs = require('fs');
 myFileReader();
 const re1 = /(\d)/
 const re2 = /(\d)*?$/
