@@ -12,7 +12,7 @@ var  lineReader = readLine.createInterface({
 });
 lineReader.on("line", function (line) {
         console.log(line)
-        siffer1 = line.re1;
-        siffer2 = line.re2;
+        siffer1 = line.match(re1);
+        siffer2 = line.match(re2);
         console.log('siffer1=', siffer1, ' siffer2=', siffer2);
 });
