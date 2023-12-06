@@ -7,8 +7,8 @@ const re2 = /(\d)*?$/
 
 const file = fs.createReadStream('day1/testinput1a.txt');
 var  lineReader = readLine(createInterface({
-    input: unputStream,
-    terminal: false,
+    input: file,
+    terminal: false
 });
 lineReader.on("line", function (line) {
         console.log(line)
