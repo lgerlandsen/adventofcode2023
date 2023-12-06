@@ -6,7 +6,7 @@ const re1 = /(\d)/
 const re2 = /(\d)*?$/
 
 const file = fs.createReadStream('day1/testinput1a.txt');
-var  lineReader = readLine(createInterface({
+var  lineReader = readLine.createInterface({
     input: file,
     terminal: false
 });
