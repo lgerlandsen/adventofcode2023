@@ -23,7 +23,7 @@ var sum = 0;
     }
 console.log('Day 1 part a');
 console.log('Sum=', sum);
-});
+})();
 console.log('end')
 //});
 
