@@ -13,10 +13,10 @@ var siffer2 ;
         //console.log(line)
         siffer1 = line.match(re1)[1];
         siffer2 = line.match(re2)[1];
-        console.log('siffer1=', siffer1, ' siffer2=', siffer2);
-        console.log(json_findnumbers[siffer1], " + " , json_findnumbers[siffer2]);
-        //sum += siffer1 * 10 + siffer2 
+        //console.log('siffer1=', siffer1, ' siffer2=', siffer2);
+        //console.log(json_findnumbers[siffer1], " + " , json_findnumbers[siffer2]);
+        sum += Number(json_findnumbers[siffer1]) * 10 + Number(json_findnumbers[siffer2]);
     }
 console.log('Day 1 part b');
-//console.log('Sum=', sum);
+console.log('Sum=', sum);
 })();
