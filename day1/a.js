@@ -4,4 +4,3 @@ fs.readFile(filename, 'utf8', function(err, data) {
   console.log('OK: ' + filename);
   console.log(data)
 });
-
