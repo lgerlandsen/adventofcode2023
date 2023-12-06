@@ -10,4 +10,3 @@ const file = fs.open('day1/testinput1a.txt');
         siffer2 = re2.line;
         console.log('siffer1=', siffer1, ' siffer2=', siffer2);
     }
-}
