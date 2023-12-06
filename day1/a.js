@@ -3,7 +3,7 @@ const fs = require('fs');
 const readLine = require('readline');
 
 const re1 = /(\d)/
-const re2 = /(\d).*?$/
+const re2 = /.*(\d).*?$/
 
 const file = fs.createReadStream('day1/testinput1a.txt');
 var  lineReader = readLine.createInterface({
