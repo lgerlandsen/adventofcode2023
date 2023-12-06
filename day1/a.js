@@ -1,6 +1,6 @@
-//import { open } from 'node:fs/promises';
-const fs = require('fs');
-const readLine = require('readline');
+const { open } = require('node:fs/promises');
+//const fs = require('fs');
+//const readLine = require('readline');
 
 const re1 = /(\d)/
 const re2 = /.*(\d).*?$/
@@ -12,7 +12,7 @@ const re2 = /.*(\d).*?$/
 //});
 var sum = 0;
 ( async () => {
-    const file = await fs.open('day1/testinput1a.txt');
+    const file = await open('day1/testinput1a.txt');
     for await ( const line of file.readLines()) {
 //lineReader.on("line", function (line) {
         console.log(line)
