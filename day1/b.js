@@ -8,7 +8,7 @@ let sum = 0;
 var siffer1 ;
 var siffer2 ;
 ( async () => {
-    const file = await open('day1/testinput1b.txt');
+    const file = await open('day1/input1a.txt');
     for await ( const line of file.readLines()) {
         //console.log(line)
         siffer1 = line.match(re1)[1];
