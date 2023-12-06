@@ -9,10 +9,10 @@ const file = fs.createReadStream('day1/testinput1a.txt');
 var  lineReader = readLine(createInterface({
     input: unputStream,
     terminal: false,
-})
+});
 lineReader.on("line", function (line) {
         console.log(line)
         siffer1 = re1.line;
         siffer2 = re2.line;
         console.log('siffer1=', siffer1, ' siffer2=', siffer2);
-    }
+});
