@@ -12,7 +12,7 @@ const re2 = /.*(\d).*?$/
 //});
 var sum = 0;
 ( async () => {
-    const file = await open('day1/testinput1a.txt');
+    const file = await fs.open('day1/testinput1a.txt');
     for await ( const line of file.readLines()) {
 //lineReader.on("line", function (line) {
         console.log(line)
