@@ -18,3 +18,5 @@ jobs:
       - run: npm ci
       - run: npm run build --if-present
       - run: node day1/a.js
+      - run: node day1/b.js
+      
